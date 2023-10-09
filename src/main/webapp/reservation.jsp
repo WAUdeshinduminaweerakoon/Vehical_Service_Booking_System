@@ -11,7 +11,7 @@
 <section>
 <div class="maindiv">
 	<h1>Make a reservation</h1>
-	<form action="">
+	<form method="post" action="Registartion">
 	<div >
 	 <table>
         <tr>
@@ -34,11 +34,7 @@
             <td><label for="phone">Phone Number:</label></td>
             <td><input type="tel" id="phone" name="phone" required></td>
         </tr>
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="name" name="email" required></td>
-        </tr>
-         <tr>
+                <tr>
                 <td><label for="country">Country:</label></td>
                 <td>
                     <select id="country" name="country">

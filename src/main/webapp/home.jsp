@@ -14,7 +14,8 @@
 		<div><a href="reservation.jsp">Make a reservation</a></div>
 		<div><a href="profile.jsp">View profile Information</a></div>
 		<div><a href="viewRes.jsp">View reservation</a></div>
-		<a href="index.jsp">Log out</a>
+		<!--<a href="index.jsp">Log out</a>-->
+		<a href="logout?SAML2.HTTPBinding=HTTP-POST">Logout</a>
 	
 	</div>
 	<div>

@@ -58,18 +58,19 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 					    }
 					}
 				%>
-			<tr>
-			<th><h3>User name</h3></th>
-			<th>:</th>
-			<th><h3><%=uname %></h3></th>
-			</tr>
+			
 			<tr>
 			<th><h3>Name</h3></th>
 		    <th>:</th>
 			<th><h3><%=name %></h3></th>
 			</tr>
 			<tr>
-			<th><h3>Email</h3></th>
+			<th><h3>User name</h3></th>
+			<th>:</th>
+			<th><h3><%=uname %></h3></th>
+			</tr>
+			<tr>
+			<th><h3>User Email</h3></th>
 			<th>:</th>
 			<th><h3><%=email %></h3></th>
 			</tr>
@@ -79,11 +80,11 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 			<th><h3><%=mobile %></h3></th>
 			</tr>
 			<tr>
-			<th><h3>Country</h3></th>
+			<th><h3>User Country</h3></th>
 			<th>:</th>
 			<th><h3><%=country %></h3></th>
 			</tr>
-					</table>
+		</table>
 		<a href="index.jsp">Log out</a>
 	</div>
 	</div>

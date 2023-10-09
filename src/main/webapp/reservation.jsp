@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +12,7 @@
 <link href="CSS/reservationCss.css" rel="stylesheet">
 </head>
 <body>
+<input type="hidden" id="status" value="<%= request.getAttribute("status")%>">
 <section>
 <div class="maindiv">
 	<h1>Make a reservation</h1>
@@ -91,7 +96,7 @@
 	</form>
 	
 	
-	
+
 	
 	
 	</div>
@@ -99,5 +104,17 @@
 		<span>Copyright  &copy | Udesh Indumina</span>
 	</div>
 </section>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script type="text/javascript">
+    var status = document.getElementById("status").value;
+    if (status === "Registration was successful!") {
+        swal("Success", "Registration was successful!", "success");
+    } else if (status === "Registration failed. Please try again.") {
+        swal("Error", "Registration failed. Please try again.", "error");
+    }
+</script>
 </body>
 </html>

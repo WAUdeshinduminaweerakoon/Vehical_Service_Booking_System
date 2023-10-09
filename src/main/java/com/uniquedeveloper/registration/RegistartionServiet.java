@@ -1,6 +1,5 @@
 package com.uniquedeveloper.registration;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -51,10 +50,12 @@ public class RegistartionServiet extends HttpServlet {
 			
 			int rowCount = pst.executeUpdate();
 			dispatcher = request.getRequestDispatcher("reservation.jsp");
-			if(rowCount>0) {
-				request.setAttribute("status", "success");
+			if(rowCount> 0) {
+				request.setAttribute("status", "Registration was successful!");
+				
+				
 			}else {
-				request.setAttribute("status", "failed");
+				request.setAttribute("status", "Registration failed. Please try again.");
 			}
 			dispatcher.forward(request, response);
 		}catch(Exception e) {

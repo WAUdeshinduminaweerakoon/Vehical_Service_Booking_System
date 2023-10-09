@@ -58,7 +58,7 @@
             <tr>
                 <td><label for="time">Time:</label></td>
                 <td><input type="time" id="time" name="time"></td>
-          </tr>
+         </tr>
            <tr>
                 <td><label for="reg_number">Vehicle Registration Number:</label></td>
                 <td><input type="text" id="reg_number" name="reg_number"></td>
